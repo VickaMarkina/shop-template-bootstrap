@@ -1,0 +1,61 @@
+.sidebar-filter {
+  padding: 15px 30px 30px 30px;
+  color: $color-light;
+
+  @include lg-min {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-right: 1px solid $color-light;
+  }
+  @include lg {
+    border-top: 1px solid $color-light;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  legend {
+    font-weight: bold;
+  }
+
+  .form-check {
+    margin: 10px 0 10px 0;
+
+    &-input {
+      width: 0;
+      height: 0;
+
+      &::before {
+        content: "";
+        display: block;
+        border: 1px solid $color-light;
+        width: 12.8px;
+        height: 12.8px;
+        margin-top: 5.6px;
+      }
+      &:checked {
+        &::before {
+          background-color: $color-light;
+        }
+      }
+    }
+
+    &-label {
+      margin-left: 8px;
+      font-size: 20px;
+    }
+  }
+
+  &__more {
+    color: $color-light;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    background-color: $color-dark;
+    border-radius: 0;
+    border: 1px solid $color-light;
+  }
+}

@@ -1,0 +1,60 @@
+.bg-light {
+  background-color: transparent !important;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-radius: 0 !important;
+  font-size: 19.2px;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: transparent;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn {
+  padding: 6px 10px 6px 10px;
+  border-radius: 0;
+  background-color: $color-dark;
+}
+
+.btn-outline-success:hover {
+  color: $color-dark;
+  background-color: $color-light;
+  border-color: $color-dark;
+}
+
+.btn-outline-success.focus,
+.btn-outline-success:focus {
+  box-shadow: none;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: $color-light;
+  content: ">";
+}
+
+.breadcrumb {
+  padding: 16px 0 0 0;
+  opacity: 0.5;
+  background-color: transparent;
+  font-size: 14px;
+
+  a,
+  .active {
+    color: $color-light;
+  }
+}

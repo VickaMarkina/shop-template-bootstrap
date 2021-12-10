@@ -1,0 +1,134 @@
+.main {
+  &-title {
+    &__filter {
+      background-color: $color-dark;
+      color: $color-light;
+      border-color: $color-light;
+      font-size: 20px;
+      padding: 3px 10px 5px 10px;
+      margin-top: 6px;
+    }
+
+    h1 {
+      font-size: 45.6px;
+    }
+  }
+
+  &-content {
+    margin-top: 30px;
+  }
+}
+
+.content-item {
+  &__wrapper {
+    border: 1px solid $color-light;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    height: 180px;
+    background-color: rgba($color-light, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &__actions {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    .btn {
+      display: block;
+      background-color: transparent;
+      border-color: $color-dark;
+      color: $color-dark;
+      margin-bottom: 5px !important;
+      width: 30px;
+      height: 30px;
+      padding: 0;
+
+      &:hover {
+        background-color: $color-dark;
+        color: $color-light;
+      }
+    }
+  }
+
+  .containet-fluid {
+    padding: 0 15px;
+    background-color: rgba(44, 113, 182, 0.5);
+  }
+
+  &__title {
+    font-size: 28px;
+    padding-top: 12px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__characteristics {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 15px;
+
+    span {
+      display: block;
+      margin: 7px 0;
+    }
+  }
+
+  &__price {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__btn {
+    padding: 15px;
+
+    .content-item__btn-cart,
+    .content-item__btn-more {
+      background-color: transparent;
+      border: 1px solid $color-light;
+      line-height: 27.6px;
+      margin-bottom: 30px !important;
+      text-transform: uppercase;
+      font-size: 18.4px;
+      font-weight: 700;
+      color: $color-light;
+      padding: 8px 5px 10px 5px;
+
+      &:hover {
+        background-color: rgba($color-light, 0.8);
+        color: $color-dark;
+      }
+    }
+
+    .content-item__btn-cart {
+      background-color: rgba($color-light, 0.2);
+      margin-bottom: 15px !important;
+
+      i {
+        font-size: 16px;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.content-more {
+  margin-bottom: 30px;
+  text-align: center;
+
+  a {
+    font-size: 32px;
+    color: $color-light;
+  }
+}
