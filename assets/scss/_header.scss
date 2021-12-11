@@ -47,6 +47,15 @@ header {
     }
   }
 
+  @include lg {
+    display: inline-flex;
+    width: calc(100% - 100px);
+
+    .form-control {
+      flex-grow: 2;
+    }
+  }
+
   .btn {
     margin: 5px;
     padding: 0;
@@ -69,6 +78,10 @@ header {
   position: relative;
   width: 50px;
   height: 50px;
+
+  @include lg {
+    margin-top: -12px !important;
+  }
 
   i {
     font-size: 24px;
