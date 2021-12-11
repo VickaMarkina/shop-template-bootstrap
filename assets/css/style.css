@@ -320,9 +320,11 @@ body {
 }
 @media (min-width: 992px) {
   .navbar-nav {
-    padding-right: 30px;
+    padding-right: 32px;
     padding-left: 70px;
-    width: calc(100% - 220px);
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
   .navbar-nav > .nav-item {
     -webkit-box-flex: 1;
