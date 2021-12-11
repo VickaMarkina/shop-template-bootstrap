@@ -20,9 +20,9 @@ header {
 
 .navbar-nav {
   @include lg-min {
-    padding-right: 32px !important;
+    padding-right: 32px;
     padding-left: 70px;
-    flex-grow: 1 !important;
+    flex-grow: 1;
 
     > .nav-item {
       flex-grow: 1;
