@@ -22,7 +22,6 @@ header {
   @include lg-min {
     padding-right: 32px;
     padding-left: 70px;
-    // width: calc(100% - 200px);
     flex-grow: 1;
 
     > .nav-item {
